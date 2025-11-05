@@ -198,7 +198,7 @@ pd.DataFrame(
 
 """## Modelling
 
-Cosine Similarity, untuk mengidentifikasi korelasi antara judul buku dan kategorinya
+Cosine Similarity, untuk mengidentifikasi korelasi antara tempat wisata dan kategorinya
 """
 
 cosine_sim = cosine_similarity(tfidf_matrix)
@@ -348,9 +348,9 @@ print(f'NDCG@{k}:       {np.mean(ndcgs):.4f}')
 
 """Hasil evaluasi tersebut menunjukkan bahwa model yang dibangun belum optimal dalam memberikan rekomendasi destinasi wisata kepada pengunjung.
 - Precision@20: 0.0057, berarti sistem ini dapat memberikan banyak rekomendasi destinasi tetapi hanya 0,57% yang relevan dan disukai oleh user.
-- Recall@20: 0.0378, berarti sistem rekomendasi hanya mencakup sebagian sebagian kecil item yang relevan, di mana dari semua tempat uang seharusny direkomendasikan, hanya 3,78% di anataranya yang berhasil ditemukan.
-- F1@20: 0.0099, menunjukkan sistem yang tidak seimbang anatara ketepatan dan cakupannya.
-- MAP@20: 0.0052, berarti bahwa item yang relevan jarang uncul di urutan awal sehingga tidak terlihat oleh user.
+- Recall@20: 0.0378, berarti sistem rekomendasi hanya mencakup sebagian sebagian kecil item yang relevan, di mana dari semua tempat yang seharusnya direkomendasikan, hanya 3,78% di antaranya yang berhasil ditemukan.
+- F1@20: 0.0099, menunjukkan sistem yang tidak seimbang antara ketepatan dan cakupannya.
+- MAP@20: 0.0052, berarti bahwa item yang relevan jarang muncul di urutan awal sehingga tidak terlihat oleh user.
 - NDCG@20: 0.0357, menunjukkan urutan rekomendasi yang belum baik karena item relevan banyak muncul di posisi bawah.
 
 Proyek ini sudah bisa memberikan rekomendasi destinasi wisata kepada pengunjung, tetapi dari beragam item yang direkomendasikan, item yang relevan dengan preferensi pengunjung masih jarang diberikan/diterima oleh pengunjung.

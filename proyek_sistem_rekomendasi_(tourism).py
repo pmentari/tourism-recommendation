@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1WUAAtaR6QoBCwadButAiCPuTsx7jc2Hj
 
 # Proyek Sistem Rekomendasi
-- **Nama:** Putri Mentari
-- **Email:** ri.mentaripm@gmail.com
-- **ID Dicoding:** pmentari
 
 ## Import Semua Packages/Library yang Digunakan
 """
